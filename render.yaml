@@ -1,10 +1,5 @@
-services:
-  - type: web
-    name: crypto-trading-bot
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    envVars:
+python-telegram-bot==13.15
+flask==2.0.3
+python-dotenv==0.19.2
       - key: BOT_TOKEN
         value: "8362224561:AAE4yKns_A8FfWBA9S_3MK-Lol2CthPOq-I"
